@@ -12,7 +12,8 @@ int main(void){
     int input_data;
 
     printf("Enter a number please: ");
-    input_data = get_input_analyser(input, SIZE_INPUT);
+
+    input_data = get_input_analyser(input, SIZE_INPUT); // Passes variable and it's size, return what is entered
     
     if(input_data < 0){
         printf("Data invalid. \n");
@@ -23,8 +24,10 @@ int main(void){
     return 0;
 }
 
-int get_input_analyser(char *input, int size){ // the purpose of this function is to get data 
-                                               // without '\n' and check for error 
+int get_input_analyser(char *input, int size){ 
+    // the purpose of this function is to get data 
+    // without '\n' and check for error 
+
     int result = 0;
     char c;
     int size_data = 0;
@@ -42,7 +45,7 @@ int get_input_analyser(char *input, int size){ // the purpose of this function i
     }
 
     
-    if(checked_input){ // It's a number, converting (char) in (int)
+    if(checked_input){ // if to be a number, converter (char) to (int)
         int multi = 1;
 
         for(int c=size_data-1; c >= 0; c--){
@@ -50,9 +53,9 @@ int get_input_analyser(char *input, int size){ // the purpose of this function i
             multi *= 10;
         }
 
-        return result;
+        return result; // return result converted
     }
 
-    return -1;
+    return -1; // It's not a number
 }
 
