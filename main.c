@@ -14,7 +14,7 @@ int main(void){
 
     // In this function bellow, i only need put the name of file that i want execute
     
-    strncpy(choice, "is_integer",SIZE_NAME_FUNCTION); // <-- choice the function to execute
+    strncpy(choice, "string_between",SIZE_NAME_FUNCTION); // <-- choice the function to execute
 
 
     sprintf(choice_struct, "cd %s && gcc *.c -o main.out && ./main.out", choice);
