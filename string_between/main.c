@@ -14,7 +14,7 @@ int main(void){
     char *string_test = calloc(sizeof(char), STRING_SIZE);
     char *string_return = calloc(sizeof(char), STRING_SIZE);
 
-    strncpy(string_test, "This is a phrase to make a (test) and 'anymore.' ", STRING_SIZE);
+    strncpy(string_test, "This is a phrase to make a (test) and 'nothing more'. ", STRING_SIZE);
     
 
     char start = '\'';
