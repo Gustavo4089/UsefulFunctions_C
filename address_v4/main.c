@@ -10,7 +10,7 @@ char* address_v4(char *string);
 
 int main(void){
 
-    address_v4("Nmap scan report for GustavoThinkPad-X220 (192.168.100.5)");
+    address_v4("Nmap scan report for XXXXXXX (192.168.100.5)");
     address_v4("Host is up (0.0019s latency).");
     address_v4("Nmap scan report for 192.168.100.23");
     address_v4("Host is up (0.0067s latency).");
