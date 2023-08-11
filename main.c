@@ -14,7 +14,7 @@ int main(void){
 
     // In this function bellow, i only need put the name of file that i want execute
     
-    strncpy(choice, "address_v4",SIZE_NAME_FUNCTION); // <-- choice the function to execute
+    strncpy(choice, "lower_case",SIZE_NAME_FUNCTION); // <-- choice the function to execute
 
 
     sprintf(choice_struct, "cd %s && gcc *.c -o main.out && ./main.out", choice);
